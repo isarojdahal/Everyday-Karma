@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+
+            .form
+            {
+                height:300px;
+                background-color:#ccc;
+                width:300px;
+                text-align:center;
+                padding:30px;
+                border-radius: 12px;
+                margin-top:200px;
+                margin-left:200px;
+            }
+
+            input
+            {
+                border-radius: 7px;
+                height:40px;
+                width:180px;
+                background-image: url('tick.png');
+                background-repeat: no-repeat;
+                background-position: 150px 5px;
+            }
+
+            input[type="text"]:focus
+            {
+                color:blue;            
+            }
+
+
+         
+
+            input[type="submit"]
+            {
+                background-image: none;
+                color:red;
+                border-radius: 0;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        
+        <div class="form">
+
+            Username <br/><br/>
+            <input type="text">
+
+            <br/><br/>
+
+            Password<br/><br/>
+            <input type="password">
+
+            <br/><br/>
+            <br/>
+            <input type="submit" value="Login">
+
+        </div>
+
+    </body>
+</html>
