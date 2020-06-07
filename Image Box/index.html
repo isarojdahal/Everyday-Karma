@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Box</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <div class="row">
+
+        <div class="col"><img src="/images/img1.jpg" onclick="showBox(1)" alt=""></div>
+
+        <div class="col"><img src="/images/img2.jpg" onclick="showBox(2)" alt=""></div>
+
+        <div class="col"><img src="/images/img3.jpg" onclick="showBox(3)" alt=""></div>
+
+
+
+    </div>
+
+
+    <div id="imageBox">
+
+        <span class="close" onclick="closeBox()">&times;</span>
+        <div id="content"></div>
+
+
+    </div>
+
+
+</body>
+</html>

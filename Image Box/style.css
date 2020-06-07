@@ -1,0 +1,47 @@
+.row
+{
+    display:flex;
+    justify-content: center;
+}
+
+.row .col img
+{
+    height:150px;
+}
+
+.row .col img:hover
+{
+    opacity:0.9;
+}
+
+#imageBox
+{
+    position: fixed;
+    background-color: black;
+    height:100vh;
+    width:100%;
+    top:0;
+    left:0;
+    display: none;
+
+
+}
+
+span.close
+{
+    color:white;
+    font-size: 40px;
+    position: absolute;
+    top:15px;
+    right:15px;
+    cursor: pointer;
+}
+
+#content img
+{
+    position: absolute;
+    height:400px;
+    top:20%;
+    left:35%;
+
+}
