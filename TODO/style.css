@@ -1,0 +1,43 @@
+.row
+{
+    padding:30px;
+
+}
+
+input
+{
+    width:50%;
+    height:50px;
+    font-size: large;
+}
+
+button
+{
+    height:55px;
+    width:60px;
+}
+
+#myList li
+{
+    list-style-type: none;
+    border:1px solid #ccc;
+    padding:30px;
+    margin-top:12px;
+    font-size: larger;
+    color:#ccc;
+
+}
+
+#myList li small
+{
+    color:black;
+}
+
+span.close
+{
+    float:right;
+    font-size: larger;
+    color:red;
+    cursor:pointer;
+    margin-top:-12px;
+}
