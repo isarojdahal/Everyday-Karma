@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+
+    <style>
+        #loader
+        {
+            height:200px;
+            width:200px;
+            border: 20px solid #ccc;
+            border-top:20px solid blue;
+            border-radius: 50%; 
+            animation: spin 2s linear infinite;
+            -webkit-animation:spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+
+            0%{transform: rotate(0deg);}
+            100%{transform:rotate(360deg);}
+            
+        }
+
+        #progressbar{
+
+            height:30px;
+            width:400px;
+            background-color: #ccc;
+
+        }
+
+        #block{
+            height:30px;
+            width:20px;
+            background-color: blue;
+            animation : moveblock 3s linear infinite;
+        }
+
+        @keyframes moveblock {
+
+            0%{width:20px;}
+
+            10%{width:40px;}
+
+            50%{width:200px;}
+
+            80%{width:320px;}
+
+            100%{width:400px;}
+            
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div id="loader"></div><br/><br/>
+    
+    <div id="progressbar">
+
+        <div id="block"></div>
+
+
+    </div>
+</body>
+</html>
