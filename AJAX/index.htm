@@ -1,0 +1,25 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="fetchData()">Fetch Data</button>
+    <div id="content"></div>
+  </body>
+
+  <script>
+    function fetchData() {
+      var request = new XMLHttpRequest();
+      request.onreadystatechange = function () {
+        if (this.status == 200 && this.readyState == 4) {
+          document.getElementById("content").innerHTML = this.responseText;
+        }
+      };
+
+      request.open("GET", "sample.txt", true);
+      request.send();
+    }
+  </script>
+</html>
