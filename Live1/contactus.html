@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Contact us</h2>
+
+    Full name &nbsp; <input type="text" id="fullname" /><br /><br />
+    Email address : <input type="email" id="email" /><br /><br />
+
+    Message :<br />
+    <textarea rows="10" cols="20" id="message"></textarea>
+
+    <input type="file" />
+
+    <br /><br />
+    <center><button onclick="validate()">Submit</button></center>
+    <!-- <input type="button" value="Submit" /> -->
+  </body>
+
+  <script>
+    function validate() {
+      document.write(document.getElementById("fullname").value);
+      document.write(document.getElementById("email").value);
+      document.write(document.getElementById("message").value);
+    }
+  </script>
+</html>

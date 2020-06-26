@@ -1,0 +1,50 @@
+body {
+  font-family: sans-serif;
+}
+
+h1,
+h2,
+h6 {
+  text-align: center;
+  color: green;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style-type: none;
+  background-color: #ccc;
+  padding: 20px;
+}
+
+li {
+  display: inline;
+  padding-left: 30px;
+  padding: 20px;
+}
+
+li:hover {
+  color: red;
+  cursor: pointer;
+  background-color: black;
+}
+
+a {
+  /* color: black; */
+  text-decoration: none;
+}
+
+input,
+textarea {
+  color: green;
+  font-size: medium;
+  border-radius: 4px;
+}
+
+input {
+  height: 50px;
+}
+
+button {
+  height: 50px;
+  width: 100px;
+}
