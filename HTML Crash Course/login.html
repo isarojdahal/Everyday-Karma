@@ -1,0 +1,66 @@
+<html>
+<head>
+	<title>Login Form</title>
+
+<style>
+
+input
+{
+	height:40px;
+	width:250px;
+}
+
+
+</style>
+
+<script>
+
+function check()
+{
+
+	var email = document.getElementById("email").value;	
+	var pass = document.getElementById("pass").value;
+
+	if(email!="" && pass!="")
+	{
+		//Action to perform if email and password are not empty
+
+		if(email=="saroj1213" && pass=="12345")
+		{
+			document.write("Login Successfully");
+		}
+
+		else
+		{
+			alert("Username and password didn't match");
+		}
+
+	}
+	else
+	{
+		alert("Enter email and password");
+	}
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<center>
+<div id="myDiv" style="height:300px;width:300px;background-color: wheat;margin-top:180px;">
+
+<br/><br/>
+<center><b>Email </b> <center><br/><input type="email" id="email"><br/><br/>
+<b>Password</b><br/> <br/><input type="Password" id="pass"><br/><br/>
+<br/>
+<input type="button" value="Login" onclick="check()">
+
+</div>
+
+</center>
+</body>
+</html>
+
