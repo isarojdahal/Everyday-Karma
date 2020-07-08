@@ -80,6 +80,6 @@ def square_root(num):
 
 <!--Emojis-->
 
-:P 8-) 
+:camels: :sparkels:
 
 @originalsaroj
