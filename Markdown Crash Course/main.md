@@ -77,3 +77,9 @@ def square_root(num):
     return num*num
 
 ```
+
+<!--Emojis-->
+
+:camels: :sparkels:
+
+@originalsaroj
