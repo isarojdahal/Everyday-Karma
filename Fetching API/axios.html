@@ -1,0 +1,19 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+  <script>
+    // axios({
+    //   method: "GET",
+    //   url: "https://jsonplaceholder.typicode.com/posts",
+    // }).then((response) => console.log(response.data));
+
+    axios
+      .get("https://jsonplaceholder.typicode.com/posts")
+      .then((response) => console.log(response.data));
+  </script>
+</html>

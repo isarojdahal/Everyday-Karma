@@ -1,0 +1,32 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+
+  <script>
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("GET", "https://jsonplaceholder.typicode.com/posts", true);
+    xmlhttp.send();
+
+    xmlhttp.onload = function () {
+      var data = JSON.parse(this.responseText);
+
+      //   console.log(data);
+
+      //   for (let i = 0; i < data.length; i++) {
+      //     console.log(data[i].body);
+      //   }
+
+      //   data.forEach(function (element) {
+      //     console.log(element.body);
+      //   });
+
+      //   for (let d of data) {
+      //     console.log(d.body);
+      //   }
+    };
+  </script>
+</html>

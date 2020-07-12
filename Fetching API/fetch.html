@@ -1,0 +1,20 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+
+  <script>
+    fetch("https://jsonplaceholder.typicode.com/posts", {
+      method: "GET",
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        data.forEach(function (obj) {
+          console.log(obj.title);
+        });
+      });
+  </script>
+</html>
