@@ -1,0 +1,9 @@
+{
+  "name": "Nepal Covid-19 Update",
+  "version": "1.0.0",
+  "description": "Get latest information of Nepal Covid19 update",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "index.html"
+  }
+}
