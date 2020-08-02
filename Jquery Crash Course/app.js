@@ -135,46 +135,42 @@
 //add
 // append(), prepend(), after(), before()
 
-// $("#mainDiv").append("Saroj <b> Dahal</b>");
+// $("#myDiv").append(" and i live in <b>damauli</b>");
+// $("#myDiv").prepend(" and i live in <b>damauli</b>");
 
-// const div = "<div>Hello its me <img src='cat.jpg'></div>";
-// $("#mainDiv").prepend(div);
-
-// $("#mainDiv").after("<div> Hello</div>");
-// $("#mainDiv").before("<img src='cat.jpg' height='150' width='150'>");
+// $("#myDiv").after("<div>Hi its me Alexa</div>");
+// $("#myDiv").before("<div><img src='cat.jpg'></div>");
 
 //remove
 
-// $("#mainDiv").remove();
+// $("#myDiv").remove();
 
 //classes
 
-// $("#mainDiv").addClass("another");
-// $("#mainDiv").removeClass();
+// $("#myDiv").removeClass();
+// $("#myDiv").addClass("container");
 
 // css
 
-// $("#mainDiv").css("color", "red");
-// $("#mainDiv").css("font-size", "12px");
+// $("#myDiv").css("line-height", "30px");
+// $("#myDiv").css("text-transform", "capitalize");
 
-// $("#mainDiv").css({
-//   color: "red",
-//   textTransform: "Capitalize",
-//   background: "blue",
-//   lineHeight: "32px",
+// $("#myDiv").css({
+//   lineHeight: "30px",
+//   textTransform: "capitalize",
+//   backgroundColor: "green",
 // });
 
 //jquery ui
 
-// $("#datePicker").click(function () {
-//   $(this).datepicker();
-// });
-
+// $("#datePicker").datepicker();
 // $("#myImage").draggable();
 
-// $("#mainDiv").dialog();
+// $("#myDiv").dialog();
 
 //ajax
+
+// done(), fail(), always()
 
 // $.ajax({
 //   url: "https://jsonplaceholder.typicode.com/users",
@@ -183,9 +179,9 @@
 //   .done(function (response) {
 //     console.log(response);
 //   })
-//   .fail(function (response) {
-//     console.log("failed because of : " + response);
+//   .fail(function () {
+//     console.log("Error in fetching");
 //   })
 //   .always(function () {
-//     console.log("Finshed");
+//     console.log("Completed");
 //   });
