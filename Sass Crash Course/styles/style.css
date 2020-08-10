@@ -1,0 +1,21 @@
+.alert, .alert-info, .alert-danger, .alert-primary {
+  padding: 12px;
+  font-family: sans-serif;
+  border-radius: 12px;
+  margin: 5px;
+  width: 70%;
+  color: white;
+}
+
+.alert-info {
+  background-color: orange;
+}
+
+.alert-danger {
+  background-color: red;
+}
+
+.alert-primary {
+  background-color: lightblue;
+}
+/*# sourceMappingURL=style.css.map */

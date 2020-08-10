@@ -1,0 +1,24 @@
+.alert {
+  //   border: 1px solid #ccc;
+  padding: 12px;
+  font-family: sans-serif;
+  border-radius: 12px;
+  margin: 5px;
+  width: 50% + 20%;
+  color: white;
+}
+
+.alert-info {
+  @extend .alert;
+  background-color: orange;
+}
+
+.alert-danger {
+  @extend .alert;
+  background-color: red;
+}
+
+.alert-primary {
+  @extend .alert;
+  background-color: lightblue;
+}

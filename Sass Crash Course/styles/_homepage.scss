@@ -1,0 +1,11 @@
+.container {
+  @include default-div();
+
+  h1 {
+    color: blue;
+  }
+
+  button {
+    @include btn-style(white, 20px);
+  }
+}

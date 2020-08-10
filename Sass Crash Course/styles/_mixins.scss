@@ -1,0 +1,25 @@
+@mixin btn-style($background, $padding) {
+  @if $background==black {
+    color: white;
+  } @else {
+    color: black;
+  }
+  background-color: $background;
+  padding: $padding;
+  border-radius: 12px;
+  border: none;
+  margin-bottom: 12px;
+
+  &:hover {
+    background-color: lightblue;
+  }
+}
+
+@mixin default-div() {
+  color: orange;
+  background-color: teal;
+  padding: 12px;
+  height: 50vh;
+  font-weight: bold;
+  border-top: 1px solid #ccc;
+}
