@@ -1,0 +1,22 @@
+:root {
+  --primary-background-color: tomato;
+  --default-padding: 30px;
+}
+
+#header {
+  background-color: var(--primary-background-color);
+  padding: var(--default-padding);
+  color: white;
+}
+
+.container {
+  --container-background: green;
+  background-color: var(--container-background);
+  padding: 50px;
+}
+
+#footer {
+  background-color: var(--primary-background-color);
+  padding: var(--default-padding);
+  color: white;
+}
