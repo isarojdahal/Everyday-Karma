@@ -1,0 +1,25 @@
+.light-theme {
+  --text-color: #000;
+  --background-color: #fff;
+  --button-text-color: green;
+}
+
+.dark-theme {
+  --text-color: #fff;
+  --background-color: #000;
+  --button-text-color: #ccc;
+}
+
+button {
+  color: var(--button-text-color);
+}
+
+.container {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 12px;
+}
+
+body {
+  background-color: var(--background-color);
+}
