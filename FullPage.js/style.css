@@ -1,0 +1,28 @@
+body {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+#first-section {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+#service-section {
+  background-color: teal;
+  background-image: url(images/1.jpg);
+  background-position: center;
+  background-size: contain;
+
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+#contact-section {
+  background-image: url(images/2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 12px;
+}
