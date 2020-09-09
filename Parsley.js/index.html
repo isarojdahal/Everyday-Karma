@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+
+    <style>
+      input.parsley-error,
+      textarea.parsley-error {
+        border: 1px solid red;
+      }
+
+      li.parsley-required,
+      li.parsley-minlength,
+      li.parsley-maxlength,
+      li.parsley-equalto,
+      li.parsley-type,
+      li.parsley-mincheck {
+        list-style: none;
+        font-weight: bold;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body class="container p-4">
+    <form id="form">
+      <div class="form-group">
+        <label for="name">Full name</label>
+        <input
+          type="text"
+          name="fullname"
+          class="form-control"
+          data-parsley-maxlength="15"
+          data-parsley-minlength="5"
+          data-parsley-minlength-message="Name should be of at least 5 letters"
+          required
+        />
+        <br />
+        <label for="emailAddress">Email address</label>
+        <input type="email" class="form-control" id="email" required />
+
+        <br />
+        <label for="emailAddress">Confirm Email address</label>
+        <input
+          type="email"
+          class="form-control"
+          data-parsley-equalto="#email"
+          data-parsley-equalto-message="Email address didnt match"
+          required
+        />
+
+        <br />
+
+        <div>
+          <label for="hobbies">Hobbies</label>
+          <br />
+          <input type="checkbox" name="hobby" data-parsley-mincheck="2" />
+          &nbsp;&nbsp; Cycling
+          <input type="checkbox" class="ml-2" name="hobby" /> &nbsp;&nbsp;
+          Drawing
+          <input type="checkbox" class="ml-2" name="hobby" /> &nbsp;&nbsp;
+          Swimming
+        </div>
+
+        <br /><br />
+        <label for="message">Message</label>
+
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          class="form-control"
+          data-parsley-maxwords="200"
+          required
+        ></textarea>
+      </div>
+
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+        <label class="form-check-label" for="exampleCheck1"
+          >I am member of Lions Club</label
+        >
+      </div>
+      <br />
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous"
+  ></script>
+  <script src="http://parsleyjs.org/dist/parsley.js"></script>
+
+  <script>
+    $("#form")
+      .parsley()
+      .on("form:success", function () {
+        console.log("success");
+      });
+
+    $("#form")
+      .parsley()
+      .on("form:error", function () {
+        console.log("error");
+      });
+  </script>
+</html>
