@@ -1,0 +1,21 @@
+1. Acer Aspire 5 Slim Laptop, 15.6 inches Full HD IPS Display, AMD Ryzen 3 3200U, Vega 3 Graphics, 4GB DDR4, 128GB SSD, Backlit Keyboard, Windows 10 in S Mode, A515-43-R19L, Silver
+ Price : 630.31
+
+2. ASUS VivoBook 15 Thin and Light Laptop, 15.6” FHD Display, Intel i3-1005G1 CPU, 8GB RAM, 128GB SSD, Backlit Keyboard, Fingerprint, Windows 10 Home in S Mode, Slate Gray, F512JA-AS34
+ Price : 659.88
+
+3. Lenovo IdeaPad 3 14" Laptop, 14.0" FHD (1920 x 1080) Display, AMD Ryzen 5 3500U Processor, 8GB DDR4 RAM, 256GB SSD, AMD Radeon Vega 8 Graphics, Narrow Bezel, Windows 10, 81W0003QUS, Abyss Blue
+ Price : 572.99
+
+4. Lenovo Flex 5 14" 2-in-1 Laptop, 14.0" FHD (1920 x 1080) Touch Display, AMD Ryzen 5 4500U Processor, 16GB DDR4, 256GB SSD, AMD Radeon Graphics, Digital Pen Included, Win 10, 81X20005US, Graphite Grey
+ Price : 619.70
+
+5. HP 15-Inch FHD Laptop, 10th Gen Intel Core i5-1035G1, 8 GB RAM, 256 GB Solid-State Drive, Windows 10 Home (15-dy1036nr, Natural Silver)
+ Price : 404.00
+
+6. Acer Aspire 5 Slim Laptop, 15.6" Full HD IPS Display, AMD Ryzen 7 3700U, RX Vega 10 Graphics, 8GB DDR4, 512GB SSD, Backlit Keyboard, Windows 10 Home, A515-43-R6DE
+ Price : 485.99
+
+7. Lenovo Flex 14 2-in-1 Convertible Laptop, 14 Inch FHD Touchscreen Display, AMD Ryzen 5 3500U Processor, 12GB DDR4 RAM, 256GB NVMe SSD, Windows 10, 81SS000DUS, Black, Pen Included
+ Price : 573.99
+
