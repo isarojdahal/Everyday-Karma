@@ -1,0 +1,18 @@
+svg{
+    height:150px;
+    width:150px;
+    color:orange;
+}
+
+.milestone-text{
+
+    display:block;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.milestone-number{
+    font-size:45px;
+    padding:10px;
+    font-weight: bold;
+}
