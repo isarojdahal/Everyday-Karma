@@ -1,0 +1,86 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <center>
+        <div class="container p-3 mt-3 row card" id="marksheet" style="height:400px;">
+            <div class="col-lg-2">
+                <span class="fa fa-user fa-border fa-5x"></span>
+            </div>
+
+            <div class="col-lg  ">
+
+
+                <b>Student Name</b> : Saroj Dahal<br />
+                <b>Roll.no </b> : 191725
+
+                <br /><b>Subject </b>: Software Engineering
+                <br /><b>University </b> :Harvad University
+
+                <table class="table mt-4 table-striped p-0 col-lg-8">
+                    <tr>
+                        <td>Subject</td>
+                        <td>Marks</td>
+                    </tr>
+                    <tr>
+                        <td>System Designs</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Data Structures & Alogrithms</td>
+                        <td>99</td>
+                    </tr>
+                    <tr>
+                        <td>Digital Currency</td>
+                        <td>89</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Total : XXX</td>
+                    </tr>
+                </table>
+
+
+            </div>
+
+        </div>
+        <button id="download" class="mt-4 btn btn-success" onclick="downloadMarksheet()">Download</button>
+    </center>
+
+
+
+
+</body>
+
+
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+<script>
+
+    function downloadMarksheet() {
+
+        html2canvas(document.querySelector("#marksheet")).then(canvas => {
+
+            var a = document.createElement("a");
+            a.href = canvas.toDataURL("image/jpeg");
+
+            a.download = "marksheet.jpg";
+            a.click();
+        });
+
+
+    }
+
+
+</script>
+
+
+</html>
