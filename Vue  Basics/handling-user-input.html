@@ -1,0 +1,30 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="app1">
+      <input type="text" v-on:click="doSomething" />
+    </div>
+  </body>
+
+  <script src="https://unpkg.com/vue@next"></script>
+  <script>
+    const handleInput = {
+      data() {
+        return {};
+      },
+
+      methods: {
+        doSomething(event) {
+          console.log(event);
+        },
+
+        printHello() {},
+      },
+    };
+    Vue.createApp(handleInput).mount(".app1");
+  </script>
+</html>

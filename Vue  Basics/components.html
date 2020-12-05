@@ -1,0 +1,33 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <navbar theme="dark-theme" name="saroj"></navbar>
+      <navbar theme="default-theme" name="suraj"></navbar>
+    </div>
+  </body>
+  <script src="https://unpkg.com/vue@next"></script>
+  <script>
+    const app = {
+      data() {
+        return {};
+      },
+      methods: {},
+    };
+
+    const navbarComponent = {
+      props: ["theme", "name"],
+      template: `<div style="height:100px;background:green;padding:10px;margin-top:10px;">
+      I am Navbar {{theme}} 
+      <br/>
+      {{name}}
+      </div>`,
+    };
+
+    Vue.createApp(app).component("navbar", navbarComponent).mount("#app");
+  </script>
+</html>

@@ -1,0 +1,30 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app1">
+      <ol>
+        <li v-for="(fruit,index) in fruits">
+          {{fruit}} with index : {{index}}
+        </li>
+      </ol>
+    </div>
+  </body>
+
+  <script src="https://unpkg.com/vue@next"></script>
+  <script>
+    const loop = {
+      data() {
+        return {
+          fruits: ["apple", "mango", "strawberry", "banana"],
+        };
+      },
+
+      methods: {},
+    };
+    Vue.createApp(loop).mount("#app1");
+  </script>
+</html>

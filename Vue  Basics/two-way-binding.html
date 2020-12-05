@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      {{message}}
+      <br /><br />
+      <input type="text" v-model="message" />
+    </div>
+  </body>
+
+  <script src="https://unpkg.com/vue@next"></script>
+  <script>
+    const binding = {
+      data() {
+        return {
+          message: "",
+        };
+      },
+
+      methods: {},
+    };
+    Vue.createApp(binding).mount("#app");
+  </script>
+</html>

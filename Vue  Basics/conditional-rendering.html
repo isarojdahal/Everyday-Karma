@@ -1,0 +1,37 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app1">
+      Counter : {{counter}}
+      <br /><br />
+      <input type="button" value="Increase" @click="increaseCounter" />
+      <br /><br />
+      <span v-if="counter%2==0"> It is even</span>
+      <span v-else> It is odd. </span>
+    </div>
+  </body>
+
+  <script src="https://unpkg.com/vue@next"></script>
+  <script>
+    const conditionalRendering = {
+      data() {
+        return {
+          counter: 0,
+        };
+      },
+
+      methods: {
+        increaseCounter() {
+          // this.counter = this.counter + 1;
+          this.counter++;
+        },
+      },
+    };
+
+    Vue.createApp(conditionalRendering).mount("#app1");
+  </script>
+</html>
