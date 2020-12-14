@@ -1,0 +1,2 @@
+/*! @name videojs-logo @version 2.1.1 @license MIT */
+.video-js.vjs-logo{display:block}.video-js.vjs-logo .vjs-logo-content{position:absolute;opacity:1;transition:visibility 2s,opacity 2s}.video-js.vjs-logo .vjs-logo-content.vjs-logo-hide{visibility:hidden;opacity:0}
