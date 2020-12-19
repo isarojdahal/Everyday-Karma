@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas id="my_canvas"></canvas>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.943/pdf.min.js"></script>
+  <script>
+    pdfjsLib.getDocument("sample.pdf").then((doc) => {
+      var totalPages = doc._pdfInfo.numPages;
+
+      doc.getPage(3).then((page) => {
+        var canvas = document.getElementById("my_canvas");
+        var context = canvas.getContext("2d");
+
+        var viewport = page.getViewport(1);
+
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
+        page.render({
+          canvasContext: context,
+          viewport: viewport,
+        });
+      });
+    });
+  </script>
+</html>
