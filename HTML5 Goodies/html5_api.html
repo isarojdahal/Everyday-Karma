@@ -1,0 +1,34 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <button onclick="getLocation()">Get Location</button> -->
+  </body>
+
+  <script>
+    function getLocation() {
+      if (navigator.geolocation) {
+        //code
+        console.log("supports geo location");
+        navigator.geolocation.getCurrentPosition(printLocation, errorFunction);
+      } else {
+        console.log("Browser doesnot support geo location");
+      }
+    }
+
+    getLocation();
+
+    function printLocation(data) {
+      console.log(data.coords.latitude);
+      console.log(data.coords.longitude);
+    }
+
+    function errorFunction(data) {
+      console.log(data);
+    }
+  </script>
+</html>
