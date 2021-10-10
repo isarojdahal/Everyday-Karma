@@ -1,0 +1,21 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+
+  <script>
+    fetch("https://api.github.com/gists/8f24cb75cea065e26f53830bdaadf757")
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        console.log("comments ; " + data.comments);
+        console.log(data.files["a.js"].filename);
+        console.log(data.files["a.js"].size);
+        console.log(data.files["a.js"].language);
+      });
+  </script>
+</html>

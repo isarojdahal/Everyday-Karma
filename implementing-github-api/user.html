@@ -1,0 +1,38 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Username : <input type="text" id="username" />
+    <button id="findBtn">Find</button>
+    <div id="result"></div>
+  </body>
+  <script>
+    var btn = document.getElementById("findBtn");
+    btn.addEventListener("click", reqUser);
+
+    function reqUser() {
+      const username = document.getElementById("username").value;
+      fetch("https://api.github.com/users/" + username)
+        .then((response) => response.json())
+        .then((data) => {
+          var content = document.getElementById("result");
+
+          content.innerHTML = `<img src="${data.avatar_url}" height="100" width="100">
+            Bio : <b> ${data.bio}
+            `;
+          // for (var d in data) {
+          //   var img = document.createElement("img");
+          //   img.src = data[d];
+          //   console.log(data[d]);
+          //   document.body.appendChild(img);
+
+          console.log(data);
+          // }
+        });
+    }
+  </script>
+</html>

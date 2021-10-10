@@ -1,0 +1,23 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+
+  <script>
+    fetch("https://api.github.com/search/repositories?q=stars:<50")
+      .then((response) => response.json())
+      .then((data) => {
+        for (var d in data.items) {
+          console.log(data.items[d].full_name);
+
+          document.body.innerHTML += `<a href="${data.items[d].html_url}">${data.items[d].full_name}</a>
+             <br/> ${data.items[d].stargazers_count} <br/><br/>`;
+        }
+        console.log(data);
+      });
+  </script>
+</html>

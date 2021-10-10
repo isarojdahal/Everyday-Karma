@@ -1,0 +1,38 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Repository Name : <input type="text" id="repoName" /><br />
+    User Name : <input type="text" id="userName" /><br />
+    <button onclick="fetchStargazers()">Fetch Stargazers</button>
+    <hr />
+
+    <div id="resultDiv"></div>
+  </body>
+
+  <script>
+    function fetchStargazers() {
+      const repoName = document.getElementById("repoName").value;
+      const userName = document.getElementById("userName").value;
+
+      const resultDiv = document.getElementById("resultDiv");
+      fetch(`https://api.github.com/repos/${userName}/${repoName}/stargazers`)
+        .then((response) => response.json())
+        .then((data) => {
+          resultDiv.innerHTML = "";
+          console.log(data);
+          for (const d in data) {
+            var para = document.createElement("p");
+            console.log(data[d].login);
+            console.log(data[d].avatar_url);
+            para.innerHTML = `<img src="${data[d].avatar_url}" height="50" width="50"> ${data[d].login}`;
+            resultDiv.appendChild(para);
+          }
+        });
+    }
+  </script>
+</html>

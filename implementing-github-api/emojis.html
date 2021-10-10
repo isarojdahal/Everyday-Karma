@@ -1,0 +1,23 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+
+  <script>
+    fetch("https://api.github.com/emojis")
+      .then((response) => response.json())
+      .then((data) => {
+        for (var emoji in data) {
+          var para = document.createElement("b");
+          para.innerHTML = `${emoji} <img src="${data[emoji]}">`;
+          console.log(emoji);
+          console.log(data[emoji]);
+          document.body.appendChild(para);
+        }
+      });
+  </script>
+</html>
