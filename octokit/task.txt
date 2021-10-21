@@ -1,0 +1,4 @@
+1. Authenticate user &  print current user data.
+2. Create Repo, Fork Repo , Create Issue on Repo, Delete Repo.
+3. Create a Gist comment, update comment, Delete comment & Star a gist.
+4. List all gists of current logined user.
